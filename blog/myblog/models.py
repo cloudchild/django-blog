@@ -82,7 +82,7 @@ class Link(models.Model):
     linkurl = models.URLField('网站',max_length=100)
 
     class Meta:
-        verbose_name = '友情链接'
+        verbose_name = '友情链接python manage.py createsuperuser'
         verbose_name_plural = verbose_name
 
     def __str__(self):

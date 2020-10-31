@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBlog</title>
+</head>
+<body>
+    <div>
+        <ul>
+        <h4>Blog教程目录：</h4>
+            {% for article in allarticle  %}
+             <li>{{ article.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

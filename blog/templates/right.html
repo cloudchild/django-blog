@@ -1,0 +1,11 @@
+{% load static %}
+<section class="widget post-right-item">
+    <h4 class="post-right-title">所有标签</h4>
+    <div class="tags">
+        {% for tag in tags %}
+        <a href="#">{{ tag.name }}</a>
+        {% endfor %}
+    </div>
+</section>
+</ul>
+

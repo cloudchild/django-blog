@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,12 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--    文中内容样式-->
+<!--    <link rel='stylesheet' id='fontawesome-css' href='{% static "css/font-awesome.min.css" %}' type='text/css' media='all'/>-->
+<!--    <link rel='stylesheet' id='stylesheet-css' href='{% static "css/style.css" %}' type='text/css' media='all'/>-->
+<!--    <link rel='stylesheet' id='raxus-css' href='{% static "css/raxus.css" %}' type='text/css' media='all'/>-->
+<!--    <link rel='stylesheet' id='open-social-style-css' href='{% static "css/os.css" %}' type='text/css' media='all'/>-->
      <!-- 预留网站标题的位置 -->
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
     <!-- 引入导航栏 -->
-    {% include 'header.html' %}
+    {% include 'head.html' %}
     <!-- 预留具体页面的位置 -->
     {% block content %}{% endblock content %}
     <!-- 引入注脚 -->
